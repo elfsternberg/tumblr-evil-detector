@@ -13,7 +13,7 @@
 function tumblr_reblog_warning() {
     var post = document.querySelectorAll('.post-wrapper script');
     if (post.length > 0) {
-        document.body.innerHTML += ('<div style="background-color: rgba(0,0,0,0.6);  float: right; position: absolute; top: 20px; width: 400px; color:limegreen; border: 4px solid limegreen">' +
+        document.body.innerHTML += ('<div style="background-color: rgba(0,0,0,0.6);  float: right; position: absolute; top: 60px; width: 320px; color:limegreen; border: 4px solid limegreen; z-index: 50">' +
                                     'SCRIPT DETECTED</div>');
     }
 }
