@@ -19,12 +19,13 @@ Javascript file found in this directory into Tampermonkey.
 
 The URL filter currently only identifies pages on Tumblr that are POST
 pages.  If the user has a custom DNS, sadly we can't detect them, but
-few if any spammers go to those lengths to snare people.  It will put a
-message in the UPPER LEFT corner of the page with the words "SCRIPT
-DETECTED" if a malicious javascript file is detected in the post
-message.
+few if any spammers go to those lengths to snare people.  The current
+behavior is that, if a post on the page contains malicious javascript,
+that post entry will be decorated with a new border and the footer of
+the post will contain a black box with the words "SCRIPT DETECTED."
 
-That's all it does.  It's very short.  But it's also very effective.
+That's all it does.  It just *tells* you, it doesn't fix anything for
+you.  It's very short.  But it's also very effective.
 
 ## LICENSE:
 
